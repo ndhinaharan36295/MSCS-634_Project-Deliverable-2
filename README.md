@@ -12,22 +12,22 @@ This deliverable uses the Telco Customer Churn dataset (7,043 records, 21 featur
 
 1. Feature Engineering
 
-  To improve prediction performance:
-    - A new variable, num_services, was created to reflect the number of subscribed services per customer.
-    - Categorical features were encoded using OneHotEncoder.
-    - Numerical features (tenure, TotalCharges, num_services) were standardized with StandardScaler.
+To improve prediction performance:
+  - A new variable, num_services, was created to reflect the number of subscribed services per customer.
+  - Categorical features were encoded using OneHotEncoder.
+  - Numerical features (tenure, TotalCharges, num_services) were standardized with StandardScaler.
 
 2. Data Pipeline and Models
 
-  A full preprocessing + modeling pipeline was built using ColumnTransformer and Pipeline. Three regression models were trained: Linear Regression, Ridge Regression and Lasso Regression.
+A full preprocessing + modeling pipeline was built using ColumnTransformer and Pipeline. Three regression models were trained: Linear Regression, Ridge Regression and Lasso Regression.
 
 3. Evaluation Metrics
 
-  Models were evaluated using:
-    - R² (Coefficient of Determination)
-    - MSE (Mean Squared Error)
-    - RMSE (Root Mean Squared Error)
-    - 5-fold Cross-Validation R²
+Models were evaluated using:
+  - R² (Coefficient of Determination)
+  - MSE (Mean Squared Error)
+  - RMSE (Root Mean Squared Error)
+  - 5-fold Cross-Validation R²
 
 4. Performance Visualization
 
